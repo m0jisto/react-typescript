@@ -1,18 +1,17 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 
-import { TodoPage, AboutPage } from './pages';
+import { TodoPages, AboutPages } from './pages';
 import { Navbar } from './components';
-import { ITodo } from './interfaces';
 
 const App: React.FC = () => {
-		return (
+	return (
 		<>
 			<Navbar />
 			<div className="container">
 				<Switch>
-					<Route path="/" component={TodoPage} exact />
-					<Route path="/" component={AboutPage} exact />
+					<Route path="/" component={TodoPages} exact />
+					<Route path="/about" component={AboutPages} exact />
 				</Switch>
 			</div>
 		</>

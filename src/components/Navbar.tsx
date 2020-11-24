@@ -4,15 +4,15 @@ import { NavLink } from 'react-router-dom';
 const Navbar: React.FC = () => (
 	<nav className="purple darken-2">
 		<div className="nav-wrapper container">
-			<Navlink to="/" className="brand-logo">
+			<NavLink to="/" className="brand-logo">
 				React + TypeScript
-			</Navlink>
+			</NavLink>
 			<ul id="nav-mobile" className="right hide-on-med-and-down">
 				<li>
-					<Navlink to="/">Список дел</Navlink>
+					<NavLink to="/">Список дел</NavLink>
 				</li>
 				<li>
-					<Navlink to="/about">О нас</Navlink>
+					<NavLink to="/about">О нас</NavLink>
 				</li>
 			</ul>
 		</div>
